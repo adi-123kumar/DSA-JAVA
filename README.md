@@ -22,5 +22,5 @@ This repository documents my **daily DSA practice using Java**.
 - ⏳ Linked List
 
 ## 🔗 Connect with me
-- LinkedIn: https://linkedin.com/in/...
+- LinkedIn: www.linkedin.com/in/aditya123kumar
 - GitHub: https://github.com/adi-123kumar
