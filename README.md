@@ -3,7 +3,7 @@
 This repository documents my **daily DSA practice using Java**.
 
 ## 📅 Start Date
-January 2026
+22 January 2026
 
 ## 🎯 Goals
 - Master core DSA concepts
