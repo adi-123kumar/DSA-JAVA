@@ -1,3 +1,30 @@
+/*
+ * Program Name: Custom Array Implementation in Java
+ *
+ * Description:
+ * This program demonstrates the manual implementation of an array in Java.
+ * It covers basic array operations such as:
+ *  - Insertion at the end
+ *  - Insertion at the beginning
+ *  - Insertion at a specific position
+ *  - Deletion from the end
+ *  - Displaying array elements
+ *
+ * Purpose:
+ * The goal of this program is to understand how arrays work internally
+ * and how common operations are performed without using built-in
+ * dynamic data structures like ArrayList.
+ *
+ * Concepts Used:
+ *  - Fixed-size arrays
+ *  - Index manipulation
+ *  - Element shifting
+ *  - Overflow and underflow checks
+ *
+ * Language: Java
+ * IDE: Visual Studio Code
+ */
+
 package Arrays;
 public class CustomArray{
     private int[] arr;
