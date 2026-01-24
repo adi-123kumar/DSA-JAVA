@@ -24,6 +24,10 @@
  * Language: Java
  * IDE: Visual Studio Code
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4c8e5c1e604ed4f7c3970ab738973dd14b5b6bb6
 package Arrays;
 public class CustomArray{
     private int[] arr;
