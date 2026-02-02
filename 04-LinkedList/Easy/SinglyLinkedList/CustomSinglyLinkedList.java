@@ -178,4 +178,8 @@ public class CustomSinglyLinkedList {
           return data;
       }
    }
+   // traverse reverse
+   public void traverseReverse(CustomSinglyLinkedList n){
+      
+   }
 }

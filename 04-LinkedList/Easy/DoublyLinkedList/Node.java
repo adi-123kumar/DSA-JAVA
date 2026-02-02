@@ -9,7 +9,6 @@ public class Node {
         this.data = data;
         this.prev= null;
         this.next = null;
-        System.out.println("Doubly linkdedlist created.");
         
     }
     

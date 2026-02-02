@@ -24,6 +24,7 @@ public class Main {
         c.traverse();
         c.deleteFromPos(3);
         c.traverse();
+        c.traverseReverse(c);
        
 
 
