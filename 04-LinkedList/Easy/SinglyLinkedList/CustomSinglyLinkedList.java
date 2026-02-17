@@ -179,7 +179,21 @@ public class CustomSinglyLinkedList {
       }
    }
    // traverse reverse
-   public void traverseReverse(CustomSinglyLinkedList n){
-      
+   public Node traverseReverse(){
+      if(this.head == null){
+         System.out.println("Linkedlist is empty.");
+         return null;
+      }
+      Node prev = null;
+      Node curr = this.head;
+
+      while(curr!=null){
+          Node next = curr.next;
+          curr.next = prev;
+         //  changing the pos of the next curr and prev
+         prev = curr;
+         curr = next;
+      }
+      return this.head=prev;
    }
 }

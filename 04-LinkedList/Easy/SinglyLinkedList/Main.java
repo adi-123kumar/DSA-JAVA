@@ -24,7 +24,14 @@ public class Main {
         c.traverse();
         c.deleteFromPos(3);
         c.traverse();
-        c.traverseReverse(c);
+        
+        Node temp = c.traverseReverse();
+        System.out.println("printing the reverse linked list.");
+        
+        while(temp!=null){
+            System.out.print(temp.data+"->");
+            temp = temp.next;
+        }
        
 
 

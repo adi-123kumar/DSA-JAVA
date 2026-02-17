@@ -17,7 +17,6 @@ public class GeneralTree {
         Queue<Node> q = new LinkedList<>();
         // root node should me added first to the queue.
         q.add(root);
-
         while(!q.isEmpty()){
             // current variable for dequeue the first element of the queue
             Node current = q.poll();
@@ -34,5 +33,26 @@ public class GeneralTree {
         }
         return false;
     }
-    
+    // Traversing the General Tree
+    public void traverse(){
+        if(this.root == null){
+            return;
+        }
+         // empty queue
+        Queue<Node> q = new LinkedList<>();
+        q.add(this.root);
+       while(!q.isEmpty()){
+        //   current node 
+        Node current = q.poll();
+        // printing the data of the current
+        System.out.print(current.data+"->");
+        // adding the children of the current to the queue
+        for(Node child : current.children){
+            //  add child   
+            q.add(child);
+        }
+        
+        }
+       
+    }
 }
