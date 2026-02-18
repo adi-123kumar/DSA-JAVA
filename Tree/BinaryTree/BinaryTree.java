@@ -140,4 +140,66 @@ public class BinaryTree {
             }
          }
     }
+
+    public int height(BTNode root) {
+      	// base case 
+        if(root == null){
+            return -1;
+        }
+        // calculate the left height.
+        int lHeight = height(root.left);
+        // calculate the right height.
+        int rHeight = height(root.right);
+        
+        // if we sucessfully calculate the left height and right height so,
+        // formula = 1 + max(lheight , rheight)
+        return 1+Math.max(lHeight, rHeight);
+    }
+    // count leaf node 
+    public int countLeafNode(BTNode root){
+        if(root == null){
+            return -1;
+        }
+        
+        // create a queue for level order traversal
+        Queue<BTNode> q = new LinkedList<BTNode>();
+        // add root to the queue
+        q.add(root);
+
+        // creating a count variable to count the leaf node
+        int leafCount = 0;
+
+        while(!q.isEmpty()){
+            BTNode current = q.poll();
+            if(current.left == null && current.right == null){
+                leafCount++;
+            }
+            if(current.left != null){
+                q.add(current.left);
+            }
+            if(current.right != null){
+                q.add(current.right);
+            }
+        }
+       return leafCount;
+
+    }
+    public int leafCountRecursion(BTNode root){
+        // root null case
+        if(root == null){
+            return 0;
+        }
+        // leaf node case
+        if(root.left == null && root.right == null){
+            return 1;
+        }
+        // get left leaf node count
+        int leftLeaf = leafCountRecursion(root.left);
+        // get right leaf node count
+        int rightLeaf = leafCountRecursion(root.right);
+
+        // return the sum of the leftLeaf + rightLeaf
+        return leftLeaf + rightLeaf;
+
+    }
 }

@@ -9,6 +9,9 @@ public class Main {
         b.insertNode(89);
 
         b.traverse();
+        System.out.println(b.height(b.root));
+        
         
     }
+    
 }
