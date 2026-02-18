@@ -19,7 +19,7 @@ This repository documents my **daily DSA practice using Java**.
 - ✅ Arrays
 - ✅ 2D Arrays
 - ⏳ Strings
-- ⏳ Linked List
+- ✅ Linked List
 
 ## 🔗 Connect with me
 - LinkedIn: www.linkedin.com/in/aditya123kumar
